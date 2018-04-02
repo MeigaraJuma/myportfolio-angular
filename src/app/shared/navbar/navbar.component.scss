@@ -1,7 +1,20 @@
-.example-icon {
-    padding: 0 14px;
+.navbar {
+  background-color: transparent;
+}
+.navbar-nav {
+  font-family: 'Sofia';
+}
+.name {
+  font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+      background-color:brown;
   }
-  
-  .example-spacer {
-    flex: 1 1 auto;
-  }
+}
+
+
+
+.name {
+  font-family: 'Sofia';
+}
