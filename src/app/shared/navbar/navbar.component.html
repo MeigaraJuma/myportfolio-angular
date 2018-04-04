@@ -1,18 +1,18 @@
 <header>         
     <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" [containerInside]="false">
         <logo>
-            <a [routerLink]="['/home']" class="logo navbar-brand name" SimpleSmoothScroll [scrollTo]="'home'" [duration]="800"><strong>Meigara Juma</strong></a>
+            <a [routerLink]="['/home']" class="logo navbar-brand name"><strong>Meigara Juma</strong></a>
         </logo>
         <links>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active waves-light" mdbRippleRadius>
-                    <a class="nav-link" SimpleSmoothScroll [scrollTo]="'portfolio'" [duration]="800">PORTFOLIO</a>
+                    <a class="nav-link" pageScroll href="#portfolio">PORTFOLIO</a>
                 </li>
                 <li class="nav-item waves-light" mdbRippleRadius>
-                    <a class="nav-link" SimpleSmoothScroll [scrollTo]="'about'" [duration]="800">ABOUT</a>
+                    <a class="nav-link" pageScroll href="#about">ABOUT</a>
                 </li>
                 <li class="nav-item waves-light" mdbRippleRadius>
-                    <a class="nav-link" SimpleSmoothScroll [scrollTo]="'contact'" [duration]="800">CONTACT</a>
+                    <a class="nav-link" pageScroll href="#contact">CONTACT</a>
                 </li>
             </ul>
         </links>

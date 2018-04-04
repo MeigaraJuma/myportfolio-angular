@@ -3,7 +3,8 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { SimpleSmoothScrollModule } from 'ng2-simple-smooth-scroll';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
+
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -29,8 +30,8 @@ import { ContactComponent } from './contact/contact.component';
     BrowserModule,
     RouterModule,
     MDBBootstrapModule.forRoot(),
-    SimpleSmoothScrollModule,
-    AppRoutingModule
+    AppRoutingModule,
+    Ng2PageScrollModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
