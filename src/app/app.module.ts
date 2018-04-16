@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { Form, FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppRoutingModule } from './app.routing';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
@@ -40,7 +39,7 @@ import { ContactService } from './services/contact.service';
     HttpModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, ContactService],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

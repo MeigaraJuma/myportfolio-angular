@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Http, HttpModule } from '@angular/http';
 import { ContactMessage, ContactService } from '../services/contact.service';
 
 @Component({

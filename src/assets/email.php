@@ -23,7 +23,7 @@ if(empty($errors))
 				<p>$message</p>";
  
 	$website = 'https://meigarajuma.github.io/';
-	$email_subject = "$website: MeigaraJumaPortfolio $from_name ";
+	$email_subject = "$website: Neue Nachricht von $from_name erhalten";
  
 	$email_body = '<html><body>';
 	$email_body .= "$contact $content";

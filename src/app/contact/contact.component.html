@@ -1,7 +1,7 @@
 <!-- Contact -->
 <div id="contact" class="container text-center brown-text">
   <h1 class="title mt-5 mb-5">
-    <u>CONTACT</u>
+    <u>{{CONTACT}}</u>
   </h1>
 </div>
 <!-- /Contact -->
@@ -9,8 +9,8 @@
 
 <!--Contact Form-->
 <div class="contact-me">
-    <form #contacForm="ngForm" (ngSubmit)="sendEmail(message)">
-      <p class="h4 text-center mb-4">Write something to me</p>
+    <form #contactForm="ngForm" (ngSubmit)="sendEmail(message)">
+      <p class="h4 text-center mb-4">{{ title }}</p>
 
       <div class="md-form">
         <i class="fa fa-user prefix grey-text"></i>
@@ -27,7 +27,7 @@
       <div class="md-form">
         <i class="fa fa-tag prefix grey-text"></i>
         <input type="text" id="form32" class="form-control" [(ngModel)]="message.subject" name="subject" mdbActive>
-        <label for="form34">Subject</label>
+        <label for="form32">Subject</label>
       </div>
 
       <div class="md-form">
