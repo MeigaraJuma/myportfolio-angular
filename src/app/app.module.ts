@@ -15,8 +15,6 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
-import { ContactService } from './services/contact.service';
-
 
 
 @NgModule({
@@ -39,7 +37,7 @@ import { ContactService } from './services/contact.service';
     HttpModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [ContactService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
